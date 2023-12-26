@@ -1,0 +1,116 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="st-pusher">
+    <div class="mouse-frame"><span class="mouse"></span></div>
+    <div class="st-content">
+     
+        <div class="st-content-inner">
+
+            <div class="fixedColumn hover" style="width: 38%;">
+                <div class="inner" style="background-image:url(/Upload/dukkan.jpeg) ; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="cover" style="transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0);"></div></div>
+
+            </div>
+            <div class="sideContent" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                <article class="sidecontent-inner1">
+                    <ul class="breadcrumb">
+                        <li id="26" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" itemref="28">
+
+                        </li>
+                        <li id="28" class="active" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
+
+                        </li>
+                    </ul>
+                    <br />
+                    <h1 style=" text-align:center">
+                        HAKKIMIZDA
+                    </h1>
+                    <br />
+                    <br />
+                    <p>
+                        Bir damla parfüm, başlangıcından dip notasına kadar, bir şiirin melodik satırları gibi zamanın içinde dans eder. Çiçeklerin uyanışından ormanın gizemine ve geceye uzanan bu yolculuk, bir flakonun içinde saklı bir sanat eserine dönüşür. Bu koku, duygulara dokunan bir hikaye; bir rüyanın özünden taşan vurucu bir anıdır.
+                    </p>
+
+                    <p>
+                        Hoş Geldiniz!
+
+                        Sizlere sadece bir koku değil, bir deneyim sunan Bau Rasa, parfüm tutkunları için özenle seçilmiş ürünleriyle dikkat çekiyor. Bau Rasa, kaliteden ödün vermeden, müşterilerine eşsiz ve unutulmaz anlar yaşatmayı amaçlayan bir parfüm markasıdır.
+                        <br />
+                        <h5>
+                            Misyonumuz
+                        </h5>
+
+                        Bau Rasa , müşterilerine en sevdiği parfümleri sunarken kalite, güvenilirlik ve müşteri memnuniyetine odaklanmaktadır. Misyonumuz, herkesin kendini özel hissetmesini sağlamak ve her anı daha anlamlı kılan bir parfüm deneyimi sunmaktır.
+                        <br />
+                        <br />
+                        <h5>
+                            Ürünlerimiz
+                        </h5>
+
+                        Parfüm dünyasının en sevilen markalarından özenle seçilmiş ürünlerimizle, her zevke hitap ediyoruz. Geniş ürün yelpazemiz, özel koleksiyonlarımız ve benzersiz aromalarımızla Bau Rasa, müşterilerine çeşitli seçenekler sunarak herkesin tarzına uygun bir parfüm bulmasına olanak tanır.
+                        <br />
+                        <br />
+                        <h5>
+                            Kalite ve Güvenilirlik
+                        </h5>
+
+                        Müşteri memnuniyeti ve güvenilir alışveriş deneyimi, Bau Rasa için en önemli önceliklerden biridir. Satışa sunduğumuz her ürün, özenle seçilmiş ve kalite standartlarına uygun olarak tedarik edilmiştir. Müşterilerimize güvenli ve keyifli bir alışveriş deneyimi sunmak için sürekli olarak çalışıyoruz.
+                        <br />
+                        <br />
+                        <h5>
+                            Hızlı ve Güvenli Teslimat
+                        </h5>
+
+                        Siparişlerinizi, hızlı ve güvenli bir şekilde kapınıza ulaştırmak için özenle çalışıyoruz. Bau Rasa, teslimat süreçlerini optimize etmek ve müşterilerimize en iyi hizmeti sunmak için sürekli olarak iyileştirmeler yapmaktadır.
+                        <br />
+                        <br />
+                        <h5>
+                            Bizimle İletişime Geçin
+                        </h5>
+
+                        Sizlere daha iyi hizmet verebilmek için buradayız. Her türlü soru, öneri veya geri bildiriminiz için help@bau-rasa.com adresinden veya müşteri hizmetleri hattımızdan bize ulaşabilirsiniz.
+
+                        Bau Rasa olarak, parfüm tutkunlarına unutulmaz bir alışveriş deneyimi sunmak için buradayız. Bize katılın ve koku dünyasında keyifli bir yolculuğa çıkın!
+                        <br />
+                        <br />
+                        <br />
+                    <p>
+                        Teşekkür ederiz,
+                    </p>
+                    <p>
+                        Bau Rasa, anlamı hoş koku...
+                    </p>
+
+
+
+                    <br>
+                    <br>
+
+                </article>
+            </div>
+            <link href="/Content/assets/css/Carousel.css" rel="stylesheet">
+            <link href="/Content/assets/css/font-awesome.min.css" rel="stylesheet">
+
+        </div>
+    </div>
+
+    <script>$('.carousel.carousel-multi-item.v-2 .carousel-item').each(function () {
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < 4; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });</script>
+
+</section>
+

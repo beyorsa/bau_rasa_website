@@ -1,0 +1,19 @@
+﻿@model bau_rasa.web.Models.Cart
+@using bau_rasa.web.Models
+
+<style>
+    #cart {
+        color: white;
+    }
+</style>
+
+<ul class="navbar-nav my-2 mb-lg-0">
+
+    <li id="cart" class="nav-item ">
+        <a class="nav-link" href="/Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            (@Model.CartLines.Count)
+        </a>
+    </li>
+
+</ul>

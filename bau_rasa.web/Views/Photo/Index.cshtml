@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    /* CSS ile stil belirleme */
+    body {
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 sütunlu bir grid */
+        gap: 20px; /* Sütunlar ve satırlar arasındaki boşluk */
+    }
+
+        .gallery a {
+            display: block;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            max-height: 200px; /* Her bir resmin maksimum yüksekliği belirlenir */
+            height: auto;
+            margin-top: 10px;
+        }
+</style>
+
+<h2 style="margin-top:50px;">Fotoğraf Linkleri</h2>
+<br />
+
+
+
+<div class="gallery">
+    <!-- Fotoğrafları ekleyin -->
+    <a href="https://ideacdn.net/idea/bj/02/myassets/slider_pictures/pictures_1_2.jpg?revision=1668411254" target="_blank">
+        <img src="~/theme/resim/slid1.jpg" alt="slid 1">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/slider_pictures/pictures_1_1.jpg?revision=1668411254" target="_blank">
+        <img src="~/theme/resim/slid2.png" alt="slid 2">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/slider_pictures/pictures_1_8.jpg?revision=1668411254" target="_blank">
+        <img src="~/theme/resim/slid3.png" alt="slid 3">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/030/kirke-edp-100-ml-parfum-3612_min.jpeg?revision=1703075711" target="_blank">
+        <img src="~/Upload/kirke1.png" alt="ürün 1">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/081/nero-oudh-100-ml-3514_min.jpeg?revision=1702933443" target="_blank">
+        <img src="~/Upload/nero1.png" alt="ürün 2">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/844/gumin-100-ml-3459_min.jpeg?revision=1703143466" target="_blank">
+        <img src="~/Upload/gumin1.png" alt="ürün 3">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/845/adhil-edp-100-ml-parfum-3587_min.jpeg?revision=1702932462" target="_blank">
+        <img src="~/Upload/adhil1.png" alt="ürün 4">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/003/atlantide-edp-100-ml-parfum-3321_min.jpeg?revision=1702933257" target="_blank">
+        <img src="~/Upload/atlantide1.png" alt="ürün 5">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/326/burberry-hero-eau-de-parfum-100ml-2669_min.jpeg?revision=1703072966" target="_blank">
+        <img src="~/Upload/burberry1.png" alt="ürün 6">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/557/goddess-edp-50-ml-kadin-parfum-3673_min.jpeg?revision=1703166355" target="_blank">
+        <img src="~/Upload/goddess1.png" alt="ürün 7">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/791/mr-burberry-edt-100-ml-834_min.jpeg?revision=1703230658" target="_blank">
+        <img src="~/Upload/mr-burberry1.png" alt="ürün 8">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/690/her-edp-50-ml-1703_min.jpeg?revision=1702988694" target="_blank">
+        <img src="~/Upload/her-edp1webp.png" alt="ürün 9">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/199/her-london-dream-edp-100-ml-2427_min.jpeg?revision=1703072672" target="_blank">
+        <img src="~/Upload/her-london1.png" alt="ürün 10">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/339/tony-iommi-monkey-special-50-ml-parfum-3425_min.jpeg?revision=1703075222" target="_blank">
+        <img src="~/Upload/tony-iommi1.png" alt="ürün 11">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/075/1888-100-ml-3099_min.jpeg?revision=1703075748" target="_blank">
+        <img src="~/Upload/1888-1.png" alt="ürün 12">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/071/lira-100-ml-3089_min.jpeg?revision=1703075740" target="_blank">
+        <img src="~/Upload/lira1.png" alt="ürün 13">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/747/erba-pura-100-ml-3337_min.jpeg?revision=1703251446" target="_blank">
+        <img src="~/Upload/erba-pura1.png" alt="ürün 14">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/546/layla-edp-50-ml-unisex-parfum-3260_min.jpeg?revision=1703075509" target="_blank">
+        <img src="~/Upload/layla1webp.png" alt="ürün 15">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/066/apollonia-50-ml-3364_min.jpeg?revision=1702933320" target="_blank">
+        <img src="~/Upload/apollonia1.png" alt="ürün 16">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/211/scalloped-edge-candle-french-cade-lavender-1237_min.jpeg?revision=1701633747" target="_blank">
+        <img src="~/Upload/scalloped-edge-candle-french-cade-lavender1.png" alt="ürün 17">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/209/scalloped-edge-candle-santiago-huckleberry-1233_min.jpeg?revision=1701633732" target="_blank">
+        <img src="~/Upload/scalloped-edge-candle-santiago-huckleberry1_min.png" alt="ürün 18">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/280/room-and-body-mist-goji-tarocco-orange-1315_min.jpeg?revision=1701633828" target="_blank">
+        <img src="~/Upload/room-and-body-mist-goji-tarocco-orange1.png" alt="ürün 19">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/808/ben-earthenware-white-tea-1898_min.jpeg?revision=1701634317" target="_blank">
+        <img src="~/Upload/ben-earthenware-white-tea-1898_min.png" alt="ürün 20">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/804/candle-sandal-myrrh-1894_min.jpeg?revision=1701634282" target="_blank">
+        <img src="~/Upload/candle-sandal-myrrh-1894_min.png" alt="ürün 21">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/206/r-ve-de-sisa-candle-250-gr-1227_min.jpeg?revision=1701633711" target="_blank">
+        <img src="~/Upload/r-ve-de-sisa-candle-1.png" alt="ürün 22">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/205/esprit-de-candela-candle-250-gr-1225_min.jpeg?revision=1701633703" target="_blank">
+        <img src="~/Upload/esprit-de-candela-candle-1.png" alt="ürün 23">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/203/m-moire-d-anna-candle-250-gr-1221_min.jpeg?revision=1701633687" target="_blank">
+        <img src="~/Upload/m-moire-d-anna-candle-250-gr-1221_min.png" alt="ürün 24">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/204/gr-ce-de-klavdia-candle-250-gr-1223_min.jpeg?revision=1701633695" target="_blank">
+        <img src="~/Upload/gr-ce-de-klavdia-candle-1.png" alt="ürün 25">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/829/solution-micellaire-anti-age-400-ml-yaslilik-karsiti-tonik-2834_min.jpeg?revision=1703061454" target="_blank">
+        <img src="~/Upload/solution-micellaire-anti-age-400-ml-yaslilik-karsiti-tonik-2834_min.png" alt="ürün 26">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/572/nutri-filler-lips-4-gr-besleyici-dudak-kremi-3756_min.jpeg?revision=1702652740" target="_blank">
+        <img src="~/Upload/nutri-filler-lips-4-gr-besleyici-dudak-kremi-3756_min.png" alt="ürün 27">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/197/global-repair-essence-150-ml-global-yaslanma-karsiti-bakim-losyonu-2425_min.jpeg?revision=1702650595" target="_blank">
+        <img src="~/Upload/global-repair-essence-150-ml-global-yaslanma-karsiti-bakim-losyonu-2844_min.png" alt="ürün 28">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/813/meso-mask-50-ml-kirisik-engelleyici-ve-cilt-aydinlatici-maske-2859_min.jpeg?revision=1703218562" target="_blank">
+        <img src="~/Upload/meso-mask-50-ml-kirisik-engelleyici-ve-cilt-aydinlatici-maske-2859_min.png" alt="ürün 29">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/214/bariederm-cica-daily-serum-30ml-2441_min.jpeg?revision=1702650743" target="_blank">
+        <img src="~/Upload/bariederm-cica-daily-serum-30ml-2441_min.png" alt="ürün 30">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/117/tolederm-control-soin-yeux-tp-15ml-2540_min.jpeg?revision=1702651261" target="_blank">
+        <img src="~/Upload/tolederm-control-soin-yeux-tp-15ml-2540_min.png" alt="ürün 31">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/139/bariesun-spf50-brume-seche-a-200ml-2379_min.jpeg?revision=1702650282" target="_blank">
+        <img src="~/Upload/bariesun-spf50-brume-seche-a-200ml-2379_min.png" alt="ürün 32">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/099/gel-surgras-dermatologique-f-500ml-2324_min.jpeg?revision=1702649888" target="_blank">
+        <img src="~/Upload/gel-surgras-dermatologique-f-500ml-2324_min.png" alt="ürün 33">
+    </a>
+    <a href="https://ideacdn.net/idea/bj/02/myassets/products/145/d-s-hair-anti-dandruff-balancing-shampoo-2370_min.jpeg?revision=1702890890" target="_blank">
+        <img src="~/Upload/d-s-hair-anti-dandruff-balancing-shampoo-2370_min.png" alt="ürün 34">
+    </a>
+   
+</div>
+

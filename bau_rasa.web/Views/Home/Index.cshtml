@@ -1,0 +1,80 @@
+﻿@using bau_rasa.web.Entity;
+@model  IEnumerable<Product>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Slick Slider CSS ve JS CDN -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 2000, // Otomatik oynatma hızı (ms cinsinden)
+            dots: true, // Sayfa noktalarını göster
+            arrows: true // Ok navigasyonunu göster
+            // Diğer ayarları buraya ekleyebilirsiniz
+        });
+    });
+</script>
+
+<style>
+    .photo-container {
+        background-image: url('../../theme/resim/arka9.jpg');
+        cursor: pointer;
+    }
+</style>
+
+<style>
+    .slider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<script>
+        function goToPage() {
+            // Fotoğrafa tıklandığında yönlendirilecek sayfa
+            window.location.href = '@Url.Action("Index", "About")';
+        }
+</script>
+
+<div class="photo-container" onclick="goToPage()">
+    <div class="container-md position-relative">
+        <div class="container-fluid py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <div class="mb-3"></div> <!-- Bir boşluk ekleyerek başlığı biraz aşağıya alabilirsiniz -->
+                    <h1 class="display-3 fw-bold">Bau Rasa</h1>
+                    <div class="position-absolute bottom-0 end-0">
+                        <p class="fs-3 fw-bold">Kokularımız sizi alıp götürsün..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+
+<div class="slider">
+    <div><img src="../../theme/resim/slid1.jpg" alt="Resim 1"></div>
+    <div><img src="../../theme/resim/slid2.png" alt="Resim 2"></div>
+    <div><img src="../../theme/resim/slid3.png" alt="Resim 3"></div>
+    <!-- Daha fazla resim ekleyebilirsiniz -->
+</div>
+
+
+<div class="container-sm">
+    @Html.Partial("_ProductList", Model)
+</div>
